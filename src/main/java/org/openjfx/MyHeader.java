@@ -17,5 +17,12 @@ public class MyHeader extends VBox {
             throw new RuntimeException(exception);
         }
     }
-//ajouter fonction pour ajouter des valeurs aléatoire avec le bouton
+
+    //ajouter fonction pour ajouter des valeurs aléatoire avec le bouton
+    @FXML
+    private void addPoint() throws IOException {
+        System.out.println("Let's add a new random point!");
+
+
+    }
 }
