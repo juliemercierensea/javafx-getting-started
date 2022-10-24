@@ -1,7 +1,6 @@
 package org.openjfx;
 
 import javafx.application.Platform;
-
 import java.io.DataInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;

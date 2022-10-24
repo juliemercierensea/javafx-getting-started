@@ -33,14 +33,11 @@ public class MyChart extends VBox {
         return lc;
     }
 
-
     public void add(Double args) {
-
         series.getData().add(new XYChart.Data<>(0.0, args));
     }
 
     public MyChart() {
-
         getChildren().add(buildSampleLineChart());
         Button myButton = new Button("Add a random value");
         myButton.setOnAction(new EventHandler<ActionEvent>() {

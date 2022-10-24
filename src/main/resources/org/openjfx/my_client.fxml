@@ -6,7 +6,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<fx:root type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml">
-    <TextField fx:id="IP address"/>
-    //ajouter un "onAction" pour envoyer l'action du bouton (?)
+<?import org.openjfx.MyClient?>
+<fx:root type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml" fx:controller="org.openjfx.MyClient">
+    <TextField fx:id="172.20.10.2"/>
+    <Button fx:id="myButton" text="Ajouter la valeur du voisin"/>
+
 </fx:root>
+
