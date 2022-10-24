@@ -22,7 +22,5 @@ public class MyHeader extends VBox {
     @FXML
     private void addPoint() throws IOException {
         System.out.println("Let's add a new random point!");
-
-
     }
 }

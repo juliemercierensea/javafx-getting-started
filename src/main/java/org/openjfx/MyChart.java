@@ -9,6 +9,8 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 
+import java.io.DataOutputStream;
+import java.net.Socket;
 import java.util.Random;
 
 public class MyChart extends VBox {
@@ -27,10 +29,14 @@ public class MyChart extends VBox {
                 new NumberAxis("Time Constant", 0.0, 5.0, 1),
                 new NumberAxis("Voltage (Vs)", 0.0, 1.0, 0.1)
         );
-
-
         lc.getData().add(series);
         return lc;
+    }
+
+
+    public void add(Double args) {
+
+        series.getData().add(new XYChart.Data<>(0.0, args));
     }
 
     public MyChart() {
@@ -48,9 +54,9 @@ public class MyChart extends VBox {
                             public void run() {
 
                                 System.out.println("Button clicked");
-                                Random rand = new Random(); //méthode 1
-                                double randomT = 5 * rand.nextDouble(); //méthode 1
-                                double randomV = rand.nextDouble(); //méthode 1
+                                //Random rand = new Random(); //méthode 1
+                                //double randomT = 5 * rand.nextDouble(); //méthode 1
+                                //double randomV = rand.nextDouble(); //méthode 1
                                 //series.getData().add(new XYChart.Data<>(randomT, randomV)); //méthode 1
                                 series.getData().add(new XYChart.Data<>(Math.random() * 5, Math.random())); //méthode 2
                                 //series.getData().add(new XYChart.Data<>(x++, Math.random())); //méthode 3
