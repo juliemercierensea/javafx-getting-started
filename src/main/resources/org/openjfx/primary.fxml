@@ -14,7 +14,7 @@
       <MyChart fx:id="myChart"/>
       <Label text="Primary View" />
       <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
-      <Button fx:id="AddClientValue" text="Add Client Value" onAction="#addClient"/>
+      <Button fx:id="AddClientValue" text="Send random Client Value" onAction="#addClient"/>
    </children>
 
    <padding>

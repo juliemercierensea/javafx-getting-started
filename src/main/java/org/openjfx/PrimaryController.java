@@ -20,9 +20,9 @@ public class PrimaryController {
     @FXML
     public void addClient() throws IOException {
         try {
-            Socket s = new Socket("ADDRESSE IP DE L'ENVOYEUR", 6666);
+            Socket s = new Socket("10.10.24.163", 6666);
             DataOutputStream dout = new DataOutputStream(s.getOutputStream());
-            dout.writeUTF("0.54");
+            dout.writeUTF(String.valueOf(Math.random()));
             dout.flush();
             dout.close();
             s.close();

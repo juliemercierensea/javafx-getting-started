@@ -32,7 +32,5 @@ public class ChartUpdater extends Thread {
         } catch (Exception e) {
             System.err.println(e);
         }
-
-
     }
 }
